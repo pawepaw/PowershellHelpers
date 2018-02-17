@@ -1,0 +1,1 @@
+Get-ChildItem -Path "d:\" -Filter "*.r00" -Recurse -ErrorAction SilentlyContinue -Force | ?{ $_.PSIsContainer } | Select-Object FullName
